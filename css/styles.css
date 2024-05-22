@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(19, 1, 23)
+}
+.divCounter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    height: 100px;
+    color: white;
+    font-size: 30px;
+}
+.reductionButton{
+   width: 100px;
+   height: 50px; 
+   border-radius: 5px;
+   border: none;
+   margin-right: 10px;
+   margin-left: 617px;
+   font-size: 20px;
+   font-weight: bold;
+   background-color: blueviolet;
+   
+}
+.reductionButton:hover {
+    box-shadow: 5px 5px 32px #6a21ae,
+                -5px -5px 32px #aa35ff;
+}
+.resetButton{
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: blueviolet;
+}
+.resetButton:hover {
+    box-shadow: 5px 5px 32px #6a21ae,
+                -5px -5px 32px #aa35ff;
+}
+.increaseButton{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: blueviolet;
+}
+.increaseButton:hover {
+    box-shadow: 5px 5px 32px #6a21ae,
+                -5px -5px 32px #aa35ff;
+}
+img {
+    width: 200px;
+    display: block;
+    margin-left: 700px;
+    margin-top: 150px;
+}
+
+/* Tablet screen */
+@media screen and (min-width:768px) and (max-width:1000px) {
+    .divCounter {
+        margin-top: 300px;
+    }
+    .reductionButton {
+        margin-left: 230px;
+    }
+   
+   } 
+
+/* Smarthphone screen */
+@media  screen and (max-width:767px){
+    .reductionButton {
+        margin-left: 60px;
+    }
+}
